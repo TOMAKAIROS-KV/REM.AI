@@ -130,11 +130,11 @@ h3 {
     /* animation: rotateCC 6s linear infinite; */
 }
 
-.c1-image, .c1-obj1, .c1-obj3, .c1-obj4, .c1-obj5, .c1-obj6, .c1-obj7 {
+.c1-main, .c1-obj1, .c1-obj3, .c1-obj4, .c1-obj5, .c1-obj6, .c1-obj7 {
     position: fixed;
 }
 
-.c1-image {
+.c1-main {
     width: 700px;
     filter:blur(.75px);
     z-index: 2;
