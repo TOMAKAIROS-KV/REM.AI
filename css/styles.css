@@ -141,7 +141,7 @@ h3 {
     animation: rMain 8s linear infinite;
 }
 
-.c1-image:hover {
+.c1-main:hover {
     filter:blur(0px);
     cursor: pointer;
     animation: none;
