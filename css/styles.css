@@ -42,7 +42,7 @@ h3 {
     flex-direction: row;
     justify-content:center;
     align-items: center;
-    gap: 50px;
+    gap: 5%;
     opacity: 0;
 }
 
@@ -110,7 +110,6 @@ h3 {
 .navbar {
     display: none;
     opacity: 0;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -118,8 +117,8 @@ h3 {
     padding: 25px;
     text-align: center;
     background-color: transparent;
-    position: sticky;
-    top: 0;
+    position: fixed;
+    top: 25px;
     z-index:1;
 }
 
