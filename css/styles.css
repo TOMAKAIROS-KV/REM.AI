@@ -9,7 +9,7 @@
     --h5: 1.15rem;
     --h6: 1.05rem;
     --btn1: 10px 25px;
-    --pageC: rgb(26, 144, 255);
+    --pageC: rgb(35, 130, 207);
     --borderPC: 3px solid var(--pageC);
 }
 
@@ -194,7 +194,7 @@ h3 {
     /* animation: rotateCC 6s linear infinite; */
 }
 
-.ms1,.subject1, .obj1, .obj3, .obj4, .obj5, .obj6, .obj7, .obj8, .obj9 {
+.ms1,.subject1, .obj1, .obj2, .obj3, .obj4, .obj5, .obj6, .obj7, .obj8, .obj9, .obj10, .obj11, .obj12, .objMS {
     position: fixed;
 }
 
@@ -225,7 +225,7 @@ h3 {
     right: -400px;
     bottom: -1050px;
     rotate: 50deg;
-    z-index: 0;
+    z-index: 2;
     animation: rOBJ1 10s linear infinite;
 }
 
@@ -234,6 +234,21 @@ h3 {
     0% { transform: rotate(360deg) translateX(0px) translateY(0px) rotate(-360deg) scale(.65); filter: blur(6px); }
     50% { transform: rotate(0deg) translateX(0px) translateY(0px) rotate(0deg) scale(.8); filter: blur(8px);}
     100% { transform: rotate(-360deg) translateX(0px) translateY(0px) rotate(360deg) scale(.65); filter: blur(6px);}
+}
+
+.obj2 {
+    right: -150px;
+    bottom: -1150px;
+    rotate: 35deg;
+    z-index: 2;
+    animation: rOBJ2 10s linear infinite;
+}
+
+
+@keyframes rOBJ2 {
+    0% { transform: rotate(360deg) translateX(0px) translateY(0px) rotate(-360deg) scale(.75); filter: blur(2px) brightness(80%) contrast(40%); }
+    50% { transform: rotate(0deg) translateX(0px) translateY(0px) rotate(0deg) scale(.75); filter: blur(2px) brightness(80%) contrast(40%);}
+    100% { transform: rotate(-360deg) translateX(0px) translateY(0px) rotate(360deg) scale(.75); filter: blur(2px) brightness(80%) contrast(40%);}
 }
 
 .obj3 {
@@ -333,4 +348,65 @@ h3 {
     0% { transform: rotate(-360deg) translateX(0px) translateY(0px) rotate(360deg)  scale(.4); }
     50% { transform: rotate(0deg) translateX(-10px) translateY(10px) rotate(0deg) scale(.45);}
     100% { transform: rotate(360deg) translateX(0px) translateY(0px) rotate(-360deg) scale(.4); }
+}
+
+.obj10 {
+    right: 90px;
+    top: 270px;
+    rotate: 185deg;
+    z-index: 1;
+    animation: rOBJ10 10s linear infinite;
+}
+
+
+@keyframes rOBJ10 {
+    0% { transform: rotate(360deg) translateX(0px) translateY(0px) rotate(-360deg) scale(.45); filter: blur(2px) brightness(80%) contrast(60%); }
+    50% { transform: rotate(0deg) translateX(0px) translateY(0px) rotate(0deg) scale(.45); filter: blur(2px) brightness(80%) contrast(60%);}
+    100% { transform: rotate(-360deg) translateX(0px) translateY(0px) rotate(360deg) scale(.45); filter: blur(2px) brightness(80%) contrast(60%);}
+}
+
+.obj11 {
+    right: 0px;
+    top: -800px;
+    rotate: 190deg;
+    z-index: 1;
+    animation: rOBJ11 10s linear infinite;
+}
+
+
+@keyframes rOBJ11 {
+    0% { transform: rotate(360deg) translateX(0px) translateY(0px) rotate(-360deg) scale(.45); filter: blur(2px) brightness(80%) contrast(60%); }
+    50% { transform: rotate(0deg) translateX(0px) translateY(0px) rotate(0deg) scale(.45); filter: blur(2px) brightness(80%) contrast(60%);}
+    100% { transform: rotate(-360deg) translateX(0px) translateY(0px) rotate(360deg) scale(.45); filter: blur(2px) brightness(80%) contrast(60%);}
+}
+
+.objMS {
+    transform: translateX(-50px) translateY(275px) rotate(30deg);
+}
+
+.obj12 {
+    right: -400px;
+    top: -1500px;
+    rotate: 192deg;
+    z-index: 1;
+    animation: rOBJ12 10s linear infinite;
+}
+
+
+@keyframes rOBJ12 {
+    0% { transform: rotate(360deg) translateX(0px) translateY(0px) rotate(-360deg) scale(.4); filter: blur(2px) brightness(80%) contrast(60%); }
+    50% { transform: rotate(0deg) translateX(0px) translateY(0px) rotate(0deg) scale(.4); filter: blur(2px) brightness(80%) contrast(60%);}
+    100% { transform: rotate(-360deg) translateX(0px) translateY(0px) rotate(360deg) scale(.4); filter: blur(2px) brightness(80%) contrast(60%);}
+}
+
+.chatContainer {
+    top: 100vh;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: rgb(93, 156, 207);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
